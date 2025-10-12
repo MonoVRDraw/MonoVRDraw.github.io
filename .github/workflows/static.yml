@@ -37,11 +37,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact Sheet
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact/merge@v4
         with:
           # Upload entire repository
           path: './Web/EC_Sheet'
-      - name: Upload artifact Sheet
+      - name: Upload artifact RP
         uses: actions/upload-artifact@v4
         with:
           # Upload entire repository
