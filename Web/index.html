@@ -9,14 +9,6 @@ while (false !== ($entry = readdir($handle))) {
         echo '<ing src="/EC_Sheet/'.$entry.'" class="center" />';
     }
 }
-
-$handle = opendir('/ImagesInRp');
-while (false !== ($entry = readdir($handle))) {
-    if ($entry != "." && $entry != "..") {
-        echo '<ing src="/ImagesInRp/'.$entry.'" class="center" />';
-    }
-}
-
 ?>
 
 </body>
