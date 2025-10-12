@@ -36,11 +36,16 @@ jobs:
           lfs: true
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload artifact Sheet
+        uses: actions/upload-artifact@v4
         with:
           # Upload entire repository
           path: './Web/EC_Sheet'
+      - name: Upload artifact Sheet
+        uses: actions/upload-artifact@v4
+        with:
+          # Upload entire repository
+          path: './Web/ImagesInRp'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
