@@ -3,17 +3,17 @@
 <body>
 
     <?php
-$handle = opendir('/Web/EC_Sheet');
+$handle = opendir('/EC_Sheet');
 while (false !== ($entry = readdir($handle))) {
     if ($entry != "." && $entry != "..") {
-        echo '<ing src="/Web/EC_Sheet/'.$entry.'" class="center" />';
+        echo '<ing src="/EC_Sheet/'.$entry.'" class="center" />';
     }
 }
 
-$handle = opendir('/Web/ImagesInRp');
+$handle = opendir('/ImagesInRp');
 while (false !== ($entry = readdir($handle))) {
     if ($entry != "." && $entry != "..") {
-        echo '<ing src="/Web/ImagesInRp/'.$entry.'" class="center" />';
+        echo '<ing src="/ImagesInRp/'.$entry.'" class="center" />';
     }
 }
 
