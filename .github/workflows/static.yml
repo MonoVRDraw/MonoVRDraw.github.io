@@ -36,12 +36,12 @@ jobs:
           lfs: true
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Upload artifact Sheet
+      - name: Upload Sheet
         uses: actions/upload-artifact@v4
         with:
           # Upload entire repository
           path: './Web/EC_Sheet'
-      - name: Upload artifact Image
+      - name: Upload Image
         uses: actions/upload-artifact@v4
         with:
           # Upload entire repository
